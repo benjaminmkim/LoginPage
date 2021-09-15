@@ -4,7 +4,7 @@ This program is a register and login page. It writes to a MongoDB database. The 
 Created by Benjamin Kim
 
 ## Installation
-Use npm install to install all of the necessary dependencies.
+After cloning the repo, use npm install to install all of the necessary dependencies.
 ```bash
 npm install
 ```
