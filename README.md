@@ -16,3 +16,5 @@ node app.js
 ```
 Then go to your web browser and go to:
 ```http://localhost:3000/```
+
+For full code explanation, see ./code_explanation.txt
