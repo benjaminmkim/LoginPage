@@ -1,0 +1,58 @@
+<h1>Register</h1>
+<%- include ('./messages') %>
+<form action="/users/register" method="POST">
+<div>
+    <label for="first_name">First Name</label>
+    <input
+      type="first_name"
+      name="first_name"
+      placeholder="Enter first_name"
+      value="<%= typeof first_name != 'undefined' ? first_name : '' %>"
+    />
+</div>
+
+<div>
+    <label for="last_name">Last Name</label>
+    <input
+      type="last_name"
+      name="last_name"
+      placeholder="Enter last_name"
+      value="<%= typeof last_name != 'undefined' ? last_name : '' %>"
+    />
+</div>
+
+<div>
+    <label for="email">Email</label>
+    <input
+      type="email"
+      name="email"
+      placeholder="Enter Email"
+      value="<%= typeof email != 'undefined' ? email : '' %>"
+    />
+</div>
+
+<div >
+  <label for="password">Password</label>
+  <input
+    type="password"
+    name="password"
+    placeholder="Enter Password"
+    value="<%= typeof password != 'undefined' ? password : '' %>"
+  />
+</div>
+
+<div >
+  <label for="password2">Confirm Password</label>
+  <input
+    type="password"
+    name="password2"
+    placeholder="Confirm Password"
+    value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+  />
+</div>
+
+<button type="submit" class="btn btn-primary btn-block">
+  Register
+</button>
+</form>
+<p >Have An Account? <a href="/users/login">Login</a></p>
