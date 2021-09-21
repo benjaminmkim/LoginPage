@@ -4,7 +4,7 @@ const {ensureLoggedIn} = require("../config/auth.js")
 
 //Welcome page
 router.get('/', (req,res)=>{
-  res.render('/users/login');
+  res.render('login');
 })
 
 //Dashboard for after login
